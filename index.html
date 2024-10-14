@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Produtos</title>
+    <link rel="stylesheet" href="src\style.css">
 </head>
+
+<header>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="src\logo.png">
+    </div>
+
+    <!-- Botões de navegação -->
+    <nav>
+        <button>Dashboard</button>
+        <button>Produtos</button>
+        <button>Seller Index</button>
+    </nav>
+</header>
+
 <body>
+    
     <h1>Pesquisar Produto</h1>
     <input type="text" id="produto" placeholder="Nome do produto">
     <button onclick="pesquisarProduto()">Pesquisar</button>
