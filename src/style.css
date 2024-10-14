@@ -15,17 +15,19 @@ header {
 }
 
 /* Estilos para os botões */
-nav button {
-    background-color: #007bff;
+nav a.button-link {
+    background-color: #173c8e;
     color: white;
     border: none;
     padding: 10px 20px;
     margin-left: 10px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* Efeito hover para os botões */
-nav button:hover {
-    background-color: #0056b3;
+nav a.button-link:hover {
+    background-color: #00BFDF;
 }
