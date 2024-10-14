@@ -15,7 +15,7 @@ header {
 }
 
 /* Estilos para os botões */
-nav a.button-link {
+nav button {
     background-color: #173c8e;
     color: white;
     border: none;
@@ -28,6 +28,12 @@ nav a.button-link {
 }
 
 /* Efeito hover para os botões */
-nav a.button-link:hover {
+nav button:hover {
     background-color: #00BFDF;
+}
+
+nav a.link {
+	color: white;
+    text-decoration: none;
+    display: inline-block;
 }
