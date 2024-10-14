@@ -37,3 +37,112 @@ nav a.link {
     text-decoration: none;
     display: inline-block;
 }
+
+body{
+    font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+    padding: 5px;
+}
+
+/* Estilos para o container dos resultados */
+.resultado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+/* Estilos para cada cartão de produto */
+.produto-card {
+    display: flex;
+    align-items: left;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Estilos para a imagem do produto */
+.produto-imagem {
+    width: 200px;  /* Tamanho da imagem ajustado */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;  /* Espaçamento entre a imagem e as informações */
+}
+
+/* Estilos para a seção de informações do produto */
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para o nome do produto */
+.produto-nome {
+    font-size: 24px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+}
+
+.produto-seller{
+    margin-top: -2px;
+    margin-bottom: -5pxpx;
+}
+/* Estilos para o preço do produto */
+.produto-preco{
+    font-size: 18px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.produto-precoDe {
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: -5px;	
+    color: #666;
+    text-decoration: line-through;
+}
+
+.produto-precoPor{
+    font-size: 18px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+}
+.produto-estoque{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -2px;
+}
+/* Estilos para a descrição do produto */
+.produto-descricao {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2px;
+}
+.produto-codes{
+    font-size: 18px;
+    color: #666;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.produto-status{
+    font-size: 18px;
+}
+/* Estilos para o status ATIVO */
+.produto-status.ativo {
+    color: darkgreen; /* Cor verde para ATIVO */
+    font-weight: bold;
+}
+
+/* Estilos para o status INATIVO */
+.produto-status.inativo {
+    color: darkred; /* Cor vermelha para INATIVO */
+    font-weight: bold;
+}
