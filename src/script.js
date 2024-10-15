@@ -1,4 +1,5 @@
-function produtoStatus(){
+// Função que atualiza o status do produto
+function produtoStatus() {
     const status = "Ativo";  // Pode ser "ATIVO" ou "INATIVO" vindo da API
         
     const statusElemento = document.getElementById('status-produto');
@@ -12,8 +13,9 @@ function produtoStatus(){
     }
 }
 
+// Função que exibe o card de resultado
 function pesquisarProduto() {
     const card = document.getElementById('resultado');
     card.style.display = 'block'; // Exibe o card
-    produtoStatus();  // Chama a função para atualizar o status do produto
+    produtoStatus();  // Atualiza o status do produto
 }

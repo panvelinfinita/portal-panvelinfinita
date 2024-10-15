@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Produtos</title>
-    <link rel="stylesheet" href="src\style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="src\logo.png">
+        <img src="src/logo.png" alt="Logo">
     </div>
 
     <!-- Botões de navegação -->
@@ -37,24 +33,27 @@
     </select>
     
     <button onclick="pesquisarProduto()" style="margin-left: 3px;">Pesquisar</button>
-<br>
-<br>
-<div id="resultado" class="produto-card" style="display: none;">
-    <img src="imagem-produto.jpg" alt="Nome do Produto" class="produto-imagem">
-    <div class="produto-info">
-        <h2 class="produto-nome">Nome do Produto</h2>
-        <h3 class="produto-seller">Seller ABC</h3>
-        <h3 class="produto-codes">EAN 00000000000</h3>
-        <h3 class="produto-codes">SKU Seller</h3>
-        <h3 class="produto-codes">SKU Front</h3>
-        <br>
-        <p class="produto-preco"><strong>Preço de: </strong><span class="produto-precoDe">99,90</span></p>
-        <p class="produto-preco"><strong>Por: </strong><span class="produto-precoPor">R$ 90,00</span></p>
-        <p class="produto-estoque">Estoque: 9999</p>
-        <p id="status-produto" class="produto-status">Status</p>
-    </div>
-</div>
 
-<script src="src/script.js"></script>
+    <br><br>
+
+    <!-- Card de resultado (inicialmente oculto) -->
+    <div id="resultado" class="produto-card" style="display: none;">
+        <img src="imagem-produto.jpg" alt="Nome do Produto" class="produto-imagem">
+        <div class="produto-info">
+            <h2 class="produto-nome">Nome do Produto</h2>
+            <h3 class="produto-seller">Seller ABC</h3>
+            <h3 class="produto-codes">EAN 00000000000</h3>
+            <h3 class="produto-codes">SKU Seller</h3>
+            <h3 class="produto-codes">SKU Front</h3>
+            <br>
+            <p class="produto-preco"><strong>Preço de: </strong><span class="produto-precoDe">99,90</span></p>
+            <p class="produto-preco"><strong>Por: </strong><span class="produto-precoPor">R$ 90,00</span></p>
+            <p class="produto-estoque">Estoque: 9999</p>
+            <p id="status-produto" class="produto-status">Status</p>
+        </div>
+    </div>
+
+    <!-- Script de funcionamento -->
+    <script src="src/script.js"></script>
 </body>
 </html>
