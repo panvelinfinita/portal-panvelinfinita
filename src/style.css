@@ -146,3 +146,11 @@ body{
     color: darkred; /* Cor vermelha para INATIVO */
     font-weight: bold;
 }
+
+.produto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    display: none; /* Inicialmente oculto */
+}

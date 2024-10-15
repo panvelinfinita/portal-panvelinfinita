@@ -20,7 +20,7 @@
     <!-- Botões de navegação -->
     <nav>
         <button>Dashboard</button>
-        <button>Consulta de Produtos</button>
+        <button><a href="https://panvelinfinita.github.io/panvelinfinita/" class="link" target="_self">Consulta de Produtos</a></button>
         <button>Seller Index</button>
         <button class="button"><a href="https://www.panvel.com/panvel/ofertas/panvel-infinita/1680" class="link" target="_blank">Marketplace</a></button>
     </nav>
@@ -39,7 +39,7 @@
     <button onclick="pesquisarProduto()" style="margin-left: 3px;">Pesquisar</button>
 <br>
 <br>
-<div class="resultado">
+<div class="resultado" class="produto-card" style="display: none;">
     <div class="produto-card">
         <img src="imagem-produto.jpg" alt="Nome do Produto" class="produto-imagem">
         <div class="produto-info">
@@ -54,19 +54,7 @@
             <p class="produto-estoque">Estoque: 9999</p>
             <p id="status-produto" class="produto-status">Status</>
         </div>
-        <script>
-            const status = "Ativo";  // Pode ser "ATIVO" ou "INATIVO" vindo da API
-        
-            const statusElemento = document.getElementById('status-produto');
-        
-            if (status === "Ativo") {
-                statusElemento.textContent = "Ativo";
-                statusElemento.classList.add('ativo');
-            } else {
-                statusElemento.textContent = "Inativo";
-                statusElemento.classList.add('inativo');
-            }
-        </script>
+        <script src="src/script.js"></script>
     </div>
 </div>
 </body>
