@@ -44,8 +44,12 @@ function searchSkuFront() {
             // Nome do Produto
             document.querySelector('.produto-nome').textContent = data.NameComplete || 'Nome não disponível';
             
-            // EAN
-            document.querySelector('.produto-codes.ean').textContent = `EAN: ${data.AlternateIds?.Ean || 'EAN não disponível'}`;
+            // EAN (verificação sem encadeamento opcional)
+            if (data.AlternateIds && data.AlternateIds.Ean) {
+                document.querySelector('.produto-codes.ean').textContent = `EAN: ${data.AlternateIds.Ean}`;
+            } else {
+                document.querySelector('.produto-codes.ean').textContent = 'EAN: Não disponível';
+            }
 
             // SKU Front
             document.querySelector('.produto-codes.sku-front').textContent = `SKU Front: ${data.Id || 'SKU Front não disponível'}`;
