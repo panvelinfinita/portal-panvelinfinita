@@ -1,3 +1,5 @@
+console.log("teste script")
+
 function produtoStatus() {
     const status = "Ativo";  // Pode ser "ATIVO" ou "INATIVO" vindo da API
     
