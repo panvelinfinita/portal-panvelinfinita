@@ -27,9 +27,9 @@
     <input type="text" id="produto" placeholder="Digite aqui o termo de pesquisa" style="width: 200px;">
     
     <select id="tipo-pesquisa" style="margin-left: 3px; height: 21px;">
-        <option value="produto">SKU Seller</option>
-        <option value="categoria">SKU Front</option>
-        <option value="marca">Nome do Produto</option>
+        <option value="skuSeller">SKU Seller</option>
+        <option value="skuFront">SKU Front</option>
+        <option value="skuName">Nome do Produto</option>
     </select>
     
     <button onclick="pesquisarProduto()" style="margin-left: 3px;">Pesquisar</button>
@@ -38,13 +38,13 @@
 
     <!-- Card de resultado (inicialmente oculto) -->
     <div id="resultado" class="produto-card" style="display: none;">
-        <img src="imagem-produto.jpg" alt="Nome do Produto" class="produto-imagem">
+        <img src="" class="produto-imagem">
         <div class="produto-info">
             <h2 class="produto-nome">Nome do Produto</h2>
-            <h3 class="produto-seller">Seller ABC</h3>
-            <h3 class="produto-codes">EAN 00000000000</h3>
-            <h3 class="produto-codes">SKU Seller</h3>
-            <h3 class="produto-codes">SKU Front</h3>
+            <h3 class="produto-seller">Seller</h3>
+            <h3 class="produto-codes ean">EAN</h3>
+            <h3 class="produto-codes sku-seller">SKU Seller</h3>
+            <h3 class="produto-codes sku-front">SKU Front</h3>>
             <br>
             <p class="produto-preco"><strong>Preço de: </strong><span class="produto-precoDe">99,90</span></p>
             <p class="produto-preco"><strong>Por: </strong><span class="produto-precoPor">R$ 90,00</span></p>
