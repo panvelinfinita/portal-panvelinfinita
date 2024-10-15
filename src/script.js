@@ -19,7 +19,7 @@ function searchSkuFront() {
     const tipoPesquisa = document.getElementById('tipo-pesquisa').value;
 
     if (tipoPesquisa === 'skuFront') {
-        const url = `https://panvelprd.vtexcommercestable.com.br/api/catalog_system/pvt/sku/stockkeepingunitbyid/${termoPesquisa}`;
+        const url = `https://panvelprd.vtexcommercestable.com.br/api/catalog_system/pvt/sku/stockkeepingunitbyid/{termoPesquisa}`;
 
         // Fazendo a requisição à API com headers
         fetch(url, {
@@ -77,4 +77,15 @@ function searchSkuFront() {
     } else {
         alert('Escolha uma opção válida para a pesquisa.');
     }
+}
+
+function testeApiOmnik(){
+    const url = `https://api.omnik.io/v1/catalog/products/skus?productStatus=published&pageSize=1`;
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'token': 'Dgni96OLNlk7EV5vGMzOu63I9W2QEsjydUv',
+        }
+    }
+    console.log(data)
 }
