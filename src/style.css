@@ -58,7 +58,7 @@ body{
 }
 /* Estilos para a imagem do produto */
 .produto-imagem {
-    width: 200px;  /* Tamanho da imagem ajustado */
+    width: 150px;  /* Ajuste o tamanho da imagem */
     height: auto;
     border-radius: 8px;
     margin-right: 20px;  /* Espaçamento entre a imagem e as informações */
@@ -67,8 +67,8 @@ body{
 /* Estilos para a seção de informações do produto */
 .produto-info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;  /* Informações empilhadas verticalmente */
+    justify-content: flex-start;  /* Alinha as informações ao topo */
 }
 
 /* Estilos para o nome do produto */
@@ -134,14 +134,15 @@ body{
     font-weight: bold;
 }
 
+/* Estilos para cada cartão de produto */
 .produto-card {
-    display: flex;
-    align-items: left;
-    width: 400px;
+    display: flex;  /* Usando Flexbox para alinhar a imagem e as informações lado a lado */
+    align-items: center;  /* Alinha os itens verticalmente ao centro */
+    width: 100%;  /* Defina a largura do cartão */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: #fff;
     margin: 20px 0;
 }
