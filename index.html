@@ -32,13 +32,13 @@
         <option value="skuName">Nome do Produto</option>
     </select>
     
-    <button onclick="pesquisarProduto()" style="margin-left: 3px;">Pesquisar</button>
+    <button onclick="searchSkuFront()" style="margin-left: 3px;">Pesquisar</button>
 
     <br><br>
 
     <!-- Card de resultado (inicialmente oculto) -->
     <div id="resultado" class="produto-card" style="display: none;">
-        <img src="" class="produto-imagem">
+        <img src="" alt="Imagem do Produto" class="produto-imagem"> <!-- Imagem carregada pela API -->
         <div class="produto-info">
             <h2 class="produto-nome">Nome do Produto</h2>
             <h3 class="produto-seller">Seller</h3>

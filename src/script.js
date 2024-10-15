@@ -1,7 +1,6 @@
-// Função que atualiza o status do produto
 function produtoStatus() {
     const status = "Ativo";  // Pode ser "ATIVO" ou "INATIVO" vindo da API
-        
+    
     const statusElemento = document.getElementById('status-produto');
 
     if (status === "Ativo") {
@@ -13,11 +12,10 @@ function produtoStatus() {
     }
 }
 
-function pesquisarProduto() {
+function searchSkuFront() {
     const termoPesquisa = document.getElementById('produto').value;
     const tipoPesquisa = document.getElementById('tipo-pesquisa').value;
 
-    // Só fazemos a requisição se o tipo de pesquisa for 'skuFront'
     if (tipoPesquisa === 'skuFront') {
         const url = `https://panvelprd.vtexcommercestable.com.br/api/catalog_system/pvt/sku/stockkeepingunitbyid/${termoPesquisa}`;
 
@@ -37,23 +35,23 @@ function pesquisarProduto() {
             }
             return response.json();
         })
-        ..then(data => {
-            // Preencher os dados no card com base na resposta da API
-
+        .then(data => {
+            // Atualizando os dados no card com base na resposta da API
+            
             // Imagem do Produto
-            document.querySelector('.produto-imagem').src = data.Images.ImageUrl;  // Atualiza a imagem com o URL da API
+            document.querySelector('.produto-imagem').src = data.Images.length > 0 ? data.Images[0].ImageUrl : 'https://via.placeholder.com/150';
             
             // Nome do Produto
-            document.querySelector('.produto-nome').textContent = data.NameComplete;
+            document.querySelector('.produto-nome').textContent = data.NameComplete || 'Nome não disponível';
             
             // EAN
-            document.querySelector('.produto-codes.ean').textContent = `EAN: ${data.AlternateIds.Ean}`;
+            document.querySelector('.produto-codes.ean').textContent = `EAN: ${data.AlternateIds?.Ean || 'EAN não disponível'}`;
 
             // SKU Front
-            document.querySelector('.produto-codes.sku-front').textContent = `SKU Front: ${data.Id}`;
+            document.querySelector('.produto-codes.sku-front').textContent = `SKU Front: ${data.Id || 'SKU Front não disponível'}`;
 
             // Lógica para o Seller
-            const sellers = data.SkuSellers;
+            const sellers = data.SkuSellers || [];
             let sellerEncontrado = sellers.find(seller => seller.SellerId !== "1");
             
             if (sellerEncontrado) {
@@ -61,6 +59,7 @@ function pesquisarProduto() {
                 document.querySelector('.produto-codes.sku-seller').textContent = `SKU Seller: ${sellerEncontrado.SellerStockKeepingUnitId}`;
             } else {
                 document.querySelector('.produto-seller').textContent = "Seller: Não disponível";
+                document.querySelector('.produto-codes.sku-seller').textContent = "SKU Seller: Não disponível";
             }
 
             // Exibir o card

@@ -38,13 +38,10 @@ nav a.link {
     display: inline-block;
 }
 
-body{
+body {
     font-family: "Afacad Flux", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+    font-weight: 400;  /* Substitua <weight> por um valor numérico válido */
+    font-style: normal;
     padding: 5px;
 }
 
@@ -56,6 +53,7 @@ body{
     justify-content: left;
     margin-top: 20px;
 }
+
 /* Estilos para a imagem do produto */
 .produto-imagem {
     width: 150px;  /* Ajuste o tamanho da imagem */
@@ -78,71 +76,20 @@ body{
     margin-top: -2px;
 }
 
-.produto-seller{
+.produto-seller {
     margin-top: -2px;
     margin-bottom: -5pxpx;
 }
+
 /* Estilos para o preço do produto */
-.produto-preco{
+.produto-preco {
     font-size: 18px;
     margin-top: -2px;
     margin-bottom: -2px;
 }
+
 .produto-precoDe {
     font-size: 18px;
     margin-top: -5px;
-    margin-bottom: -5px;	
-    color: #666;
-    text-decoration: line-through;
-}
-
-.produto-precoPor{
-    font-size: 18px;
-    margin-bottom: -2px;
-    margin-top: -2px;
-}
-.produto-estoque{
-    font-size: 18px;
-    margin-bottom: 0px;
-    margin-top: -2px;
-}
-/* Estilos para a descrição do produto */
-.produto-descricao {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 2px;
-}
-.produto-codes{
-    font-size: 18px;
-    color: #666;
-    margin-top: -1px;
-    margin-bottom: -1px;
-}
-
-.produto-status{
-    font-size: 18px;
-}
-/* Estilos para o status ATIVO */
-.produto-status.ativo {
-    color: darkgreen; /* Cor verde para ATIVO */
-    font-weight: bold;
-}
-
-/* Estilos para o status INATIVO */
-.produto-status.inativo {
-    color: darkred; /* Cor vermelha para INATIVO */
-    font-weight: bold;
-}
-
-/* Estilos para cada cartão de produto */
-.produto-card {
-    display: flex;  /* Usando Flexbox para alinhar a imagem e as informações lado a lado */
-    align-items: center;  /* Alinha os itens verticalmente ao centro */
-    width: 100%;  /* Defina a largura do cartão */
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    margin: 20px 0;
+    margin
 }
