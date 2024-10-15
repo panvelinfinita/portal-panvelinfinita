@@ -56,19 +56,6 @@ body{
     justify-content: left;
     margin-top: 20px;
 }
-
-/* Estilos para cada cartão de produto */
-.produto-card {
-    display: flex;
-    align-items: left;
-    width: 400px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
 /* Estilos para a imagem do produto */
 .produto-imagem {
     width: 200px;  /* Tamanho da imagem ajustado */
@@ -148,9 +135,13 @@ body{
 }
 
 .produto-card {
-    border: 1px solid #ddd;
+    display: flex;
+    align-items: left;
+    width: 400px;
     padding: 15px;
-    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
-    display: none; /* Inicialmente oculto */
+    margin: 20px 0;
 }

@@ -1,18 +1,19 @@
 function produtoStatus(){
     const status = "Ativo";  // Pode ser "ATIVO" ou "INATIVO" vindo da API
         
-const statusElemento = document.getElementById('status-produto');
+    const statusElemento = document.getElementById('status-produto');
 
-if (status === "Ativo") {
-    statusElemento.textContent = "Ativo";
-    statusElemento.classList.add('ativo');
-} else {
-    statusElemento.textContent = "Inativo";
-    statusElemento.classList.add('inativo');
-}
+    if (status === "Ativo") {
+        statusElemento.textContent = "Ativo";
+        statusElemento.classList.add('ativo');
+    } else {
+        statusElemento.textContent = "Inativo";
+        statusElemento.classList.add('inativo');
+    }
 }
 
-function pesquisar() {
+function pesquisarProduto() {
     const card = document.getElementById('resultado');
-    card.style.display = 'block';
+    card.style.display = 'block'; // Exibe o card
+    produtoStatus();  // Chama a função para atualizar o status do produto
 }
