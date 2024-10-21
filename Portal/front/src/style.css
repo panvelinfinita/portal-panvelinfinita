@@ -10,7 +10,7 @@ header {
 
 /* Estilos para a logo */
 .logo img {
-    width: 200px; /* Ajuste o tamanho da logo */
+    width: 200px;
     height: auto;
 }
 
@@ -40,14 +40,14 @@ nav a.link {
 
 body {
     font-family: "Afacad Flux", sans-serif;
-    font-weight: 400;  /* Corrigido para usar um valor numérico */
+    font-weight: 400;
     font-style: normal;
     padding: 5px;
 }
 
 /* Estilos para o container dos resultados */
 #resultado {
-    display: flex;
+    display: none;  /* Começa escondido e só aparece quando a pesquisa é feita */
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
@@ -57,97 +57,97 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    width: 100%;
+    max-width: 600px; /* Reduzido para um tamanho menor */
+}
+
+/* Estilos para o cartão do produto */
+.produto-card {
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+    padding: 10px;  /* Reduzido para um padding menor */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 0;
 }
 
 /* Estilos para a imagem do produto */
 .produto-imagem {
-    width: 150px;  /* Tamanho da imagem */
+    width: 40%;  /* A imagem ocupa menos espaço */
     height: auto;
     border-radius: 8px;
-    margin-right: 20px;  /* Espaçamento entre a imagem e as informações */
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 /* Estilos para a seção de informações do produto */
 .produto-info {
+    width: 60%;  /* As informações ocupam o outro lado */
     display: flex;
-    flex-direction: column;  /* Informações empilhadas verticalmente */
-    justify-content: flex-start;  /* Alinha as informações ao topo */
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Estilos para o nome do produto */
 .produto-nome {
-    font-size: 24px;
+    font-size: 18px;  /* Reduzido o tamanho da fonte */
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 0;
 }
 
 .produto-seller {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 /* Estilos para o código do produto (EAN, SKU) */
 .produto-codes {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
+/* Estilos para a lista de sellers */
+.produto-sellers {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.seller-info {
+    padding: 10px 0;
+}
+
+.seller-info h3, .seller-info p {
+    margin: 5px 0;
+}
+
+/* Ajuste de espaçamento entre sellers */
+.seller-info + .seller-info {
+    margin-top: 15px;
+}
+
 /* Estilos para o preço do produto */
 .produto-preco {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .produto-precoDe {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     text-decoration: line-through;
 }
 
 .produto-precoPor {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #173c8e;
-}
-
-.produto-estoque {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-/* Estilos para o status do produto */
-.produto-status {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-/* Estilos para o status ATIVO */
-.produto-status.ativo {
-    color: darkgreen;
-}
-
-/* Estilos para o status INATIVO */
-.produto-status.inativo {
-    color: darkred;
-}
-
-/* Estilos gerais para o cartão do produto */
-.produto-card {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    margin: 20px 0;
-    flex-direction: row;
 }
