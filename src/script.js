@@ -78,14 +78,3 @@ function searchSkuFront() {
         alert('Escolha uma opção válida para a pesquisa.');
     }
 }
-
-function testeApiOmnik(){
-    const url = `https://api.omnik.io/v1/catalog/products/skus?productStatus=published&pageSize=1`;
-    fetch(url, {
-        method: 'GET',
-        headers: {
-            'token': 'Dgni96OLNlk7EV5vGMzOu63I9W2QEsjydUv',
-        }
-    }
-    console.log(data)
-}
