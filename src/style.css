@@ -115,7 +115,7 @@ body {
 
 /* Estilos para a lista de sellers */
 .produto-sellers {
-    margin-top: 20px;
+    margin-top: 18px;
     border-top: 1px solid #ddd;
     padding-top: 10px;
 }
@@ -133,13 +133,6 @@ body {
     margin-top: 15px;
 }
 
-/* Estilos para o preço do produto */
-.produto-preco {
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .produto-precoDe {
     font-size: 14px;
     color: #666;
@@ -147,7 +140,24 @@ body {
 }
 
 .produto-precoPor {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
     color: #173c8e;
+}
+.produto-estoque {
+    font-size: 14px;   
+}
+
+.sku-seller{
+    font-size: 14px;   
+}
+
+.produto-preco{
+    font-size: 14px; 
+}
+
+.linkSite{
+    font-size: 14px;
+    color: #173c8e;
+    margin-top: 2px;
+    margin-bottom: 2px;  
 }
