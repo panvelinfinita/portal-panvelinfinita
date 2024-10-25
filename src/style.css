@@ -162,14 +162,18 @@ body {
     margin-bottom: 2px;  
 }
 
+/* Estilo do contêiner das tabelas para alinhar lado a lado */
+.tabelas-container {
+    display: flex;
+    gap: 0; /* Espaço entre as tabelas */
+    justify-content: space-between; /* Espaço uniforme entre as tabelas */
+}
+
 /* Estilo das tabelas */
 table {
-    width: 48%; /* Tabelas lado a lado ocupando metade do espaço cada */
+    width: 48%; /* Largura ajustada para as tabelas caberem lado a lado */
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    margin-right: 2%; /* Espaçamento entre as tabelas */
-    display: inline-block; /* Colocando tabelas lado a lado */
-    vertical-align: top;
 }
 
 /* Cabeçalho */
