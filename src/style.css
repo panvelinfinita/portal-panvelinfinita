@@ -165,7 +165,7 @@ body {
 /* Estilo do contêiner das tabelas para alinhar lado a lado */
 .tabelas-container {
     display: flex;
-    gap: 0; /* Espaço entre as tabelas */
+    gap: 2%; /* Espaço entre as tabelas */
     justify-content: space-between; /* Espaço uniforme entre as tabelas */
 }
 
