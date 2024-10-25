@@ -161,3 +161,38 @@ body {
     margin-top: 2px;
     margin-bottom: 2px;  
 }
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+table th {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+}
+
+/* Corpo */
+table td {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+/* Linhas alternadas */
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Efeito hover na linha e coluna */
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+table td:hover {
+    background-color: #ced4da;
+}
