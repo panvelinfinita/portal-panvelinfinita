@@ -171,7 +171,7 @@ table {
 
 /* Cabeçalho */
 table th {
-    background-color: #343a40;
+    background-color: #173c8e;
     color: white;
     padding: 10px;
 }
@@ -185,14 +185,17 @@ table td {
 
 /* Linhas alternadas */
 table tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #E0FFFF;
 }
 
 /* Efeito hover na linha e coluna */
 table tr:hover {
-    background-color: #e9ecef;
+    background-color: #20B2AA;
+    color:white
 }
 
 table td:hover {
-    background-color: #ced4da;
+    background-color: #008080;
+    color: white;
+    font-style: bold;
 }
