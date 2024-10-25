@@ -162,11 +162,14 @@ body {
     margin-bottom: 2px;  
 }
 
-/* Estilo da tabela */
+/* Estilo das tabelas */
 table {
-    width: 100%;
+    width: 48%; /* Tabelas lado a lado ocupando metade do espaço cada */
     border-collapse: collapse;
     font-family: Arial, sans-serif;
+    margin-right: 2%; /* Espaçamento entre as tabelas */
+    display: inline-block; /* Colocando tabelas lado a lado */
+    vertical-align: top;
 }
 
 /* Cabeçalho */
@@ -185,17 +188,17 @@ table td {
 
 /* Linhas alternadas */
 table tr:nth-child(even) {
-    background-color: #E0FFFF;
+    background-color: #F5FFFA;
 }
 
-/* Efeito hover na linha e coluna */
+/* Efeito hover na linha */
 table tr:hover {
-    background-color: #20B2AA;
-    color:white
+    background-color: #00BFDF;
+    color: white;
 }
 
 table td:hover {
-    background-color: #008080;
+    background-color: #20B2AA;
     color: white;
-    font-style: bold;
+    font-weight: bold;
 }
