@@ -152,3 +152,11 @@ function processarResultadoEan(data) {
 function processarResultadoNome(data) {
     console.log(data);
 }
+
+//Select + Pesquisa
+$(document).ready(function() {
+    $('#sellers-select').select2({
+        placeholder: "Selecione o Seller",
+        allowClear: true
+    });
+});
